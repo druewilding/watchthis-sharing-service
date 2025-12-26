@@ -9,16 +9,16 @@
     "social",
     "watchthis"
   ],
-  "homepage": "https://github.com/aimeerivers/watchthis-sharing-service#readme",
+  "homepage": "https://github.com/druewilding/watchthis-sharing-service#readme",
   "bugs": {
-    "url": "https://github.com/aimeerivers/watchthis-sharing-service/issues"
+    "url": "https://github.com/druewilding/watchthis-sharing-service/issues"
   },
   "license": "ISC",
-  "author": "aimee rivers",
+  "author": "Drue Wilding",
   "main": "dist/src/server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aimeerivers/watchthis-sharing-service.git"
+    "url": "git+https://github.com/druewilding/watchthis-sharing-service.git"
   },
   "type": "module",
   "scripts": {
