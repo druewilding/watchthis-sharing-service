@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.1...v2.1.2) (2025-12-26)
+
+
+### Chores
+
+* Change to Drue Wilding ([#28](https://github.com/druewilding/watchthis-sharing-service/issues/28)) ([a3770f9](https://github.com/druewilding/watchthis-sharing-service/commit/a3770f9cf68c2a43d098a1c4d9d3abca6f76dbc0))
+
 ## [2.1.1](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.0...v2.1.1) (2025-10-20)
 
 
