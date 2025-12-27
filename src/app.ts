@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
 import appRootPath from "app-root-path";
 import dotenv from "dotenv";
 import express from "express";
@@ -7,16 +7,30 @@ import path from "path";
 
 import packageJson from "../package.json" with { type: "json" };
 import { mountApi } from "./api.js";
+import { PrismaClient } from "./generated/prisma/client.js";
 import { authenticateJWT } from "./middleware/auth.js";
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler.js";
 
 const envFile = process.env.NODE_ENV === "test" ? ".env.test" : ".env";
 dotenv.config({ path: envFile });
 
-// Initialize Prisma client
-export const prisma = new PrismaClient();
+const databaseUrl = process.env.DATABASE_URL;
+if (!databaseUrl) {
+  throw new Error("DATABASE_URL environment variable is required");
+}
 
-// Connect to database
+const url = new URL(databaseUrl);
+if (!url.password) {
+  throw new Error(
+    "DATABASE_URL must include a password in the format: postgresql://username:password@host:port/database"
+  );
+}
+
+const adapter = new PrismaPg({
+  connectionString: databaseUrl,
+});
+export const prisma = new PrismaClient({ adapter });
+
 try {
   await prisma.$connect();
   console.log("Database connected!");
