@@ -1,6 +1,5 @@
-import { type Prisma, type Share as PrismaShare } from "@prisma/client";
-
 import { prisma } from "../app.js";
+import { type Prisma, type Share as PrismaShare } from "../generated/prisma/client.js";
 
 export interface IShare {
   id: string;
