@@ -1,6 +1,7 @@
+import "../env.js";
+
 import { PrismaPg } from "@prisma/adapter-pg";
 import appRootPath from "app-root-path";
-import dotenv from "dotenv";
 import express from "express";
 import helmet from "helmet";
 import path from "path";
@@ -10,9 +11,6 @@ import { mountApi } from "./api.js";
 import { PrismaClient } from "./generated/prisma/client.js";
 import { authenticateJWT } from "./middleware/auth.js";
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler.js";
-
-const envFile = process.env.NODE_ENV === "test" ? ".env.test" : ".env";
-dotenv.config({ path: envFile });
 
 const databaseUrl = process.env.DATABASE_URL;
 if (!databaseUrl) {
