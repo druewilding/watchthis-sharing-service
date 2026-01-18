@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.2...v2.1.3) (2026-01-18)
+
+
+### Bug Fixes
+
+* Skip publishing Docker image for forked PRs ([#34](https://github.com/druewilding/watchthis-sharing-service/issues/34)) ([7eeb343](https://github.com/druewilding/watchthis-sharing-service/commit/7eeb343332870f3a970c0d9f1cd917450e79a4af))
+
 ## [2.1.2](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.1...v2.1.2) (2025-12-27)
 
 
