@@ -1,3 +1,5 @@
+import "../env.js";
+
 import { app, prisma } from "./app.js";
 
 const port = process.env.PORT || (process.env.NODE_ENV === "test" ? 18372 : 8372);

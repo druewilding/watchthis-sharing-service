@@ -1,7 +1,4 @@
-import dotenv from "dotenv";
 import type { NextFunction, Request, Response } from "express";
-
-dotenv.config();
 
 export interface RequestWithUser extends Request {
   user?: {
