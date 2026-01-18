@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.3](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.2...v2.1.3) (2026-01-18)
+
+
+### Bug Fixes
+
+* Regenerate style.css ([#33](https://github.com/druewilding/watchthis-sharing-service/issues/33)) ([922480a](https://github.com/druewilding/watchthis-sharing-service/commit/922480a6079c0f015e07d0e1ce37e2210e414256))
+* Skip publishing Docker image for forked PRs ([#34](https://github.com/druewilding/watchthis-sharing-service/issues/34)) ([7eeb343](https://github.com/druewilding/watchthis-sharing-service/commit/7eeb343332870f3a970c0d9f1cd917450e79a4af))
+* Standardise how & when dotenv is loaded ([#32](https://github.com/druewilding/watchthis-sharing-service/issues/32)) ([a6a8215](https://github.com/druewilding/watchthis-sharing-service/commit/a6a8215fc09ed069b4b714c04ef99eecab32b37a))
+
 ## [2.1.2](https://github.com/druewilding/watchthis-sharing-service/compare/v2.1.1...v2.1.2) (2025-12-27)
 
 
